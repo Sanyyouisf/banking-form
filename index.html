@@ -4,6 +4,8 @@
 	<head>
 		<meta charset=”utf-8”>
 		<title>loan application</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+    	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
 	</head>
 	<body>
 		<h2> loan application </h2>
@@ -11,19 +13,19 @@
 			<fieldset>
 				<legend> Personal Information </legend>
 				<label for="Applicant first name">Applicant first name</label>
-				<input type="text" name="Applicant first name" value="" placeholder="Applicant first name">
+				<input type="text" name="Applicant first name" value="" placeholder="Applicant first name" pattern="[a-z]{1,15}">
 
 				<label for="Applicant middle initial">Applicant middle initial</label>
-				<input type="text" name="Applicant middle initial" value="" placeholder="Applicant middle initial">
+				<input type="text" name="Applicant middle initial" value="" placeholder="Applicant middle initial" pattern="[a-z]{1,15}">
 
 				<label for="Applicant last name">Applicant last name</label>
-				<input type="text" name="Applicant last name" value="" placeholder="Applicant last name">
+				<input type="text" name="Applicant last name" value="" placeholder="Applicant last name" pattern="[a-z]{1,15}">
 
 				<label for="Applicant address">Applicant address</label>
-				<input type="text" name="Applicant address" value="" placeholder="Applicant address">
+				<input type="text" name="Applicant address" value="" placeholder="Applicant address" pattern="[a-z]{1,55}">
 
 				<label for="Applicant occupation">Applicant occupation</label>
-				<input type="text" name="Applicant occupation" value="" placeholder="Applicant occupation">
+				<input type="text" name="Applicant occupation" value="" placeholder="Applicant occupation" pattern="[a-z]{1,50}">
 
 				<label for="Applicant employer">Applicant employer</label>
 				<input type="text" name="Applicant employer" value="" placeholder="Applicant employer">
@@ -82,19 +84,19 @@
 			</fieldset>
 			<fieldset>
 				<legend>Aditional information</legend>
-				<label for="Applicant email address">Applicant email address</label>
+				<label for="Applicant email address" pattern=pattern="[^ @]*@[^ @]*">Applicant email address</label>
 				<input type="email" name="">
 
 				<legend> </legend>
 				<label for="Applicant telephone number">Applicant telephone number</label>
-				<input type="tel" name="">
+				<input type="tel" name="" pattern="[1-9]{1,10}">
 
 				<legend> </legend>
 				<label for="Applicant LinkedIn URL">Applicant LinkedIn URL</label>
-				<input type="URL" name="">
+				<input type="URL" name="" pattern="(https://www.linkedin.com/)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]){1,50}">
 
 			</fieldset>
-			
+			<p>little modfy </p>
 
 		</form>
 	</body>
