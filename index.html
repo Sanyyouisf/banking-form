@@ -4,6 +4,8 @@
 	<head>
 		<meta charset=”utf-8”>
 		<title>loan application</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+    	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest" rel="stylesheet">
 	</head>
 	<body>
 		<h2> loan application </h2>
@@ -11,6 +13,7 @@
 			<fieldset>
 				<legend> Personal Information </legend>
 				<label for="Applicant first name">Applicant first name</label>
+
 				<input type="text" name="Applicant first name" value="" placeholder="Applicant first name">
 
 				<label for="Applicant middle initial">Applicant middle initial</label>
@@ -82,11 +85,16 @@
 			</fieldset>
 			<fieldset>
 				<legend>Aditional information</legend>
+
 				<label for="Applicant email address">Applicant email address</label>
+
+				<label for="Applicant email address" pattern=pattern="[^ @]*@[^ @]*">Applicant email address</label>
+
 				<input type="email" name="">
 
 				<legend> </legend>
 				<label for="Applicant telephone number">Applicant telephone number</label>
+
 				<input type="tel" name="">
 
 				<legend> </legend>
@@ -95,6 +103,16 @@
 
 			</fieldset>
 			
+
+				<input type="tel" name="" pattern="[1-9]{1,10}">
+
+				<legend> </legend>
+				<label for="Applicant LinkedIn URL">Applicant LinkedIn URL</label>
+				<input type="URL" name="" pattern="(https://www.linkedin.com/)(?=.*\d)(?=.*[a-z])(?=.*[A-Z]){1,50}">
+
+			</fieldset>
+			<p>little modfy </p>
+
 
 		</form>
 	</body>
